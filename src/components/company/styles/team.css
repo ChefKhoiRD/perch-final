@@ -1,0 +1,20 @@
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 15rem;
+    border: #A3A3A3 1px solid;
+    border-radius: 10px;
+}
+
+.team-member-name {
+    font-size: 1.25em;
+    font-weight: 500;
+}
+
+.team-member-position {
+    font-style: italic;
+}

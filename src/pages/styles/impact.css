@@ -1,0 +1,110 @@
+.impact-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	padding-top: 120px;
+}
+
+.impact-hero-image {
+    margin-top: 30px;
+    background-image: url('../../../public/impact-hero.jpg');
+	height: 400px;
+}
+
+.impact-main {
+	display: flex;
+}
+
+.impact-right-side {
+	flex-basis: 900px;
+}
+
+.impact-title {
+	width: 100% !important;
+}
+
+.impact-subtitle {
+	width: 80% !important;
+	font-size: 18px !important;
+	line-height: 2 !important;
+}
+
+.impact-left-side {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 300px;
+}
+
+.impact-image-container {
+	width: 370px;
+}
+
+.impact-image-wrapper {
+	display: inline-block;
+	overflow: hidden;
+	width: 100%;
+	border-radius: 10%;
+	transform: rotate(3deg);
+}
+
+.impact-image-wrapper img {
+	display: block;
+	width: 100%;
+}
+
+.impact-socials {
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+
+.impact-socials-mobile {
+	display: none;
+}
+
+@media (max-width: 1024px) {
+	.impact-logo {
+		z-index: 100;
+	}
+
+	.impact-main {
+		flex-direction: column;
+	}
+
+	.impact-subtitle {
+		padding-top: 20px !important;
+	}
+
+	.impact-left-side {
+		flex-basis: 100%;
+		order: 1;
+	}
+
+	.impact-right-side {
+		flex-basis: 100%;
+		order: 2;
+	}
+
+	.impact-image-container {
+		padding-bottom: 40px;
+	}
+
+	.impact-socials {
+		display: none;
+	}
+
+	.impact-socials-mobile {
+		padding-top: 30px;
+		display: flex;
+	}
+}
+
+@media (max-width: 600px) {
+	.impact-container {
+		padding-top: 60px;
+	}
+
+	.impact-image-container {
+		width: 80%;
+	}
+}

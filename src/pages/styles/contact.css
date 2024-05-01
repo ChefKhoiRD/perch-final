@@ -1,0 +1,87 @@
+@import "../../data/styles.css";
+
+.right-contact-body {
+    padding: 2rem;
+    border: #A3A3A3 1px solid;
+    border-radius: 15px
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row-reverse;
+    justify-content: space-between;
+	margin-top: 120px;
+}
+
+.mobile-contact-socials {
+    display: none;
+}
+
+/* Contact Form */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 700px;
+}
+
+.contact-me {
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 500px;
+    border-radius: 5px;
+}
+
+form {
+    width: 400px;
+}
+
+label {
+    margin-top: 1rem;
+    font-weight: 700;
+}
+
+input, textarea {
+    width: 100%;
+    color: #242424;
+    border-radius: 5px;
+    border-style: groove;
+    border-width: thin;
+}
+
+.submit-button {
+    float: right;
+    background: var(--tertiary-color);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+
+    -webkit-transition: background-color 0.2s;
+    -moz-transition:    background-color 0.2s;
+    -ms-transition:     background-color 0.2s;
+    -o-transition:      background-color 0.2s;
+    transition:         background-color 0.2s;
+}
+
+.submit-button:hover {
+    background: var(--secondary-color);
+    cursor: pointer;
+    border-radius: 5px;
+    height: 40px;
+    width: 80px;
+}
+
+@media (max-width: 1024px) {
+    .contact-socials-container {
+        display: none;
+    }
+
+    .mobile-contact-socials {
+        display: flex;
+        padding-top: 50px;
+    }
+}
